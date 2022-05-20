@@ -1,0 +1,35 @@
+#navBarWrap {
+    display: flex;
+    width: 80%;
+    border-bottom: 1px solid lightgrey;
+    margin-left: 10%;
+}
+#navBarLinks ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+#navBarLinks ul li a {
+    color: grey;
+    text-decoration: none;
+}
+#navBarLinks{
+    width:50%;
+    margin: 2.5%;
+}
+#header-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width:45%;
+}
+#header-right div{
+    margin: 2.5%;
+}
+#avatar {
+    width:50%;
+}
+.sticky {
+    position: absolute;
+}
