@@ -33,5 +33,46 @@
 }
 #add-to-cart {
     display: flex;
+    justify-content: flex-start;
+}
+#add-to-cart button {
+    background-color: hsl(26, 100%, 55%);
+    width: 45%;
+    border-radius: .5em;
+    border: none;
+    height: 100%;
+    margin: 2.5%;
+}
+#newPrice {
+    font-weight: bold;
+}
+#percent-off {
+    margin-left:2.5%;
+    color: hsl(26, 100%, 55%);
+    font-weight: bold;
+    background-color: hsl(25, 100%, 94%);
+    border-radius: .5em;
+    padding-left:1.5%;
+    padding-right:1.5%;
+}
+#previousPrice {
+    color: lightgrey;
+    text-decoration: line-through;
+}
+h5 {
+    color: hsl(26, 100%, 55%);
+}
+#counter {
+    background-color: lightgrey;
+    width: 25%;
+    display: flex;
     justify-content: space-evenly;
+    overflow: hidden;
+    align-items: center;
+    border-radius: .5em;
+    margin-top: 2.5%;
+}
+#counter img {
+    height: 45%;
+    align-items: center;
 }

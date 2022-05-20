@@ -8,6 +8,10 @@ import thumb3 from '../static/image-product-3-thumbnail.jpg';
 import thumb4 from '../static/image-product-4-thumbnail.jpg';
 import LeftArrow from '../static/icon-previous.svg';
 import RightArrow from '../static/icon-next.svg';
+import minus from '../static/icon-minus.svg';
+import plus from '../static/icon-plus.svg';
+import cart from '../static/icon-cart.svg'
+
 export default (props) => {
         
     return (
@@ -35,13 +39,21 @@ export default (props) => {
                         
                         <br/>
                         <span id='newPrice'>$125.00</span> 
-                        <span id='percent-off'> 50%</span>
+                        <span id='percent-off'>50%</span>
                         <br/>
                         <span id='previousPrice'>$250.00</span>
                         <br/>
                     </div>
                     <div id='add-to-cart'>
-                        0<button>Add to cart</button>
+                        <div id='counter'>
+                            <img src={minus}/>
+                            0
+                            <img src={plus}/>
+                        </div>
+                        <button>
+                            <img src={cart}/>
+                            Add to cart
+                        </button>
                     </div>
                 </div>
             </div>
