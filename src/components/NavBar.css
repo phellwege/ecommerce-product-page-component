@@ -3,6 +3,7 @@
     width: 80%;
     border-bottom: 1px solid lightgrey;
     margin-left: 10%;
+    overflow: hidden;
 }
 #navBarLinks ul{
     display: flex;
