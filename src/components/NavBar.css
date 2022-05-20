@@ -13,6 +13,10 @@
     color: grey;
     text-decoration: none;
 }
+#navBarLinks ul li a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
 #navBarLinks{
     width:50%;
     margin: 2.5%;
