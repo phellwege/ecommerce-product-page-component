@@ -2,6 +2,7 @@
     display: flex;
     width: 80%;
     padding-top: 10%;
+    margin-left: 10%;
 }
 .LeftDiv {
     display: flex;
@@ -10,11 +11,27 @@
     margin: 2.5%;
 }
 #BigImg img{
-    width:75%;
+    width:82.5%;
     border-radius: 1em;
+}
+#ImgSelector {
+    width:75%;
+    display: flex;
+    justify-content: center;
+    margin-left: 12.5%
+}
+#ImgSelector img {
+    width:20%;
+    padding: 5%;
+    border-radius: 25%;
 }
 .RightDiv {
     display: flex;
     flex-direction: column;
     width: 45%;
+    text-align: left;
+}
+#add-to-cart {
+    display: flex;
+    justify-content: space-evenly;
 }

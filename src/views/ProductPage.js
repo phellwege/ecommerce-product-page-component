@@ -2,6 +2,12 @@ import React, { useEffect, useState } from 'react';
 import Header from '../components/Header'
 import './Product.css'
 import product from '../static/image-product-1.jpg'
+import thumb1 from '../static/image-product-1-thumbnail.jpg';
+import thumb2 from '../static/image-product-2-thumbnail.jpg';
+import thumb3 from '../static/image-product-3-thumbnail.jpg';
+import thumb4 from '../static/image-product-4-thumbnail.jpg';
+import LeftArrow from '../static/icon-previous.svg';
+import RightArrow from '../static/icon-next.svg';
 export default (props) => {
         
     return (
@@ -13,12 +19,30 @@ export default (props) => {
                         <img src={product}/>
                     </div>
                     <div id='ImgSelector'>
-                        selected img 
+                        <img src={thumb1}/>
+                        <img src={thumb2}/>
+                        <img src={thumb3}/>
+                        <img src={thumb4}/>
                     </div>
                 </div>
                 <div className="RightDiv">
-                    <div></div>
-                    <div></div>
+                    <div id='text-desc'>
+                        <h5>Sneaker Company</h5>
+                        <h1>Fall Limited Edition Sneakers</h1>
+                        <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+                        durable rubber outer sole, they’ll withstand everything the weather can offer.
+                        </p>
+                        
+                        <br/>
+                        <span id='newPrice'>$125.00</span> 
+                        <span id='percent-off'> 50%</span>
+                        <br/>
+                        <span id='previousPrice'>$250.00</span>
+                        <br/>
+                    </div>
+                    <div id='add-to-cart'>
+                        0<button>Add to cart</button>
+                    </div>
                 </div>
             </div>
         </>
