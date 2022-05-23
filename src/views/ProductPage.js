@@ -45,7 +45,7 @@ export default (props) => {
                         <br/>
                     </div>
                     <div id='add-to-cart'>
-                        <div id='counter'>
+                        <div className='counter'>
                             <img src={minus}/>
                             0
                             <img src={plus}/>
