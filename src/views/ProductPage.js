@@ -17,6 +17,7 @@ function count(i) {
     i=0;
     return i
 }
+const {active}=props;
     return (
         <>
             <Header/>
@@ -26,10 +27,10 @@ function count(i) {
                         <img src={product}/>
                     </div>
                     <div id='ImgSelector'>
-                        <img src={thumb1} id='img1'/>
-                        <img src={thumb2} id='img2'/>
-                        <img src={thumb3} id='img3'/>
-                        <img src={thumb4} id='img4'/>
+                        <img src={thumb1} id='img1' className={"links"+(active===0?" active":"")}/>
+                        <img src={thumb2} id='img2' className={"links"+(active===0?" active":"")}/>
+                        <img src={thumb3} id='img3' className={"links"+(active===0?" active":"")}/>
+                        <img src={thumb4} id='img4' className={"links"+(active===0?" active":"")}/>
                     </div>
                 </div>
                 <div className="RightDiv">

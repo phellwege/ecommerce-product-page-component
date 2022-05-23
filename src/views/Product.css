@@ -29,12 +29,12 @@
 }
 #ImgSelector img {
     width:23%;
-    padding: 2%;
+    margin: 2%;
     border-radius: 25%;
     border: 2.5px solid transparent;
 }
 #ImgSelector img:hover {
-    border: 2.5px solid grey;
+    border: 2.5px solid hsl(26, 100%, 55%);
     cursor: pointer;
 }
 .RightDiv {
@@ -72,6 +72,7 @@
 }
 #add-to-cart button:hover{
     border:2.5px solid hsl(219, 9%, 45%);
+    cursor: pointer;
 }
 .counter {
     background-color: hsl(223, 64%, 98%);
@@ -98,9 +99,11 @@
 }
 #counterMinus:hover {
     border: 2.5px solid lightgrey;
+    cursor: pointer;
 }
 #counterPlus:hover {
     border: 2.5px solid lightgrey;
+    cursor: pointer;
 }
 #newPrice {
     font-weight: bold;
