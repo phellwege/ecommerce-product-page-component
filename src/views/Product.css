@@ -17,6 +17,9 @@
     width:65%;
     border-radius: 1em;
 }
+#BigImg img:hover {
+    cursor: pointer;
+}
 #ImgSelector {
     width:60%;
     display: flex;
@@ -26,8 +29,13 @@
 }
 #ImgSelector img {
     width:23%;
-    padding: 2.5%;
+    padding: 2%;
     border-radius: 25%;
+    border: 2.5px solid transparent;
+}
+#ImgSelector img:hover {
+    border: 2.5px solid grey;
+    cursor: pointer;
 }
 .RightDiv {
     display: flex;

@@ -13,7 +13,10 @@ import plus from '../static/icon-plus.svg';
 import cart from '../static/icon-cart.svg'
 
 export default (props) => {
-
+function count(i) {
+    i=0;
+    return i
+}
     return (
         <>
             <Header/>
