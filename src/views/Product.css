@@ -1,24 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Kumbh+Sans&display=swap');
+
 .ProductWrap {
     display: flex;
     width: 80%;
     padding-top: 10%;
     margin-left: 10%;
+    font-family: 'kumbh sans', sans-serif;
 }
 .LeftDiv {
     display: flex;
     flex-direction: column;
     width: 45%;
-    margin: 2.5%;
+    margin: 2%;
 }
 #BigImg img{
-    width:82.5%;
+    width:65%;
     border-radius: 1em;
 }
 #ImgSelector {
-    width:75%;
+    width:60%;
     display: flex;
     justify-content: center;
-    margin-left: 12.5%
+    margin-left: 20%
 }
 #ImgSelector img {
     width:20%;
@@ -28,12 +31,22 @@
 .RightDiv {
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 35%;
     text-align: left;
+    margin-left: 5%;
+    margin-top: 2.5%;
+}
+#text-desc {
+    width: 80%;
+}
+.RightDiv p {
+    color: hsl(219, 9%, 45%);
+    font-size: 16px;
 }
 #add-to-cart {
     display: flex;
     justify-content: flex-start;
+    width: 100%;
 }
 #add-to-cart button {
     background-color: hsl(26, 100%, 55%);
@@ -41,6 +54,7 @@
     border-radius: .5em;
     border: none;
     margin: 2.5%;
+    margin-left: 3%;
     height: 100%;
 }
 .counter {
