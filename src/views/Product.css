@@ -24,8 +24,8 @@
     margin-left: 20%
 }
 #ImgSelector img {
-    width:20%;
-    padding: 5%;
+    width:23%;
+    padding: 2.5%;
     border-radius: 25%;
 }
 .RightDiv {
@@ -57,7 +57,7 @@
     margin: 2.5%;
     margin-left: 3%;
     height: 100%;
-    box-shadow: 0px 5px 15px hsl(26, 100%, 55%);
+    box-shadow: 0px 10px 10px hsl(25, 100%, 94%);
 }
 .counter {
     background-color: hsl(223, 64%, 98%);
