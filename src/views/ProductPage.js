@@ -13,7 +13,7 @@ import plus from '../static/icon-plus.svg';
 import cart from '../static/icon-cart.svg'
 
 export default (props) => {
-        
+
     return (
         <>
             <Header/>
@@ -23,10 +23,10 @@ export default (props) => {
                         <img src={product}/>
                     </div>
                     <div id='ImgSelector'>
-                        <img src={thumb1}/>
-                        <img src={thumb2}/>
-                        <img src={thumb3}/>
-                        <img src={thumb4}/>
+                        <img src={thumb1} id='img1'/>
+                        <img src={thumb2} id='img2'/>
+                        <img src={thumb3} id='img3'/>
+                        <img src={thumb4} id='img4'/>
                     </div>
                 </div>
                 <div className="RightDiv">
@@ -44,11 +44,12 @@ export default (props) => {
                         <span id='previousPrice'>$250.00</span>
                         <br/>
                     </div>
+                    <br/>
                     <div id='add-to-cart'>
                         <div className='counter'>
-                            <img src={minus}/>
+                            <img src={minus} id='counterMinus' />
                             0
-                            <img src={plus}/>
+                            <img src={plus} id='counterPlus' />
                         </div>
                         <button>
                             <img src={cart}/>
