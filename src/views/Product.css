@@ -82,19 +82,17 @@
 }
 #counterMinus {
     padding: .75em;
-    overflow: hidden;
+    border: 2.5px solid transparent;
 }
 #counterPlus {
     padding: .75em;
-    overflow: hidden;
+    border: 2.5px solid transparent;
 }
 #counterMinus:hover {
     border: 2.5px solid lightgrey;
-    overflow: hidden;
 }
 #counterPlus:hover {
     border: 2.5px solid lightgrey;
-    overflow: hidden;
 }
 #newPrice {
     font-weight: bold;
