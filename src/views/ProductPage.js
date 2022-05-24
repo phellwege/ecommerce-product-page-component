@@ -10,6 +10,7 @@ import minus from '../static/icon-minus.svg';
 import plus from '../static/icon-plus.svg';
 import cart from '../static/icon-cart.svg';
 import LightBox from '../components/LightBox';
+
 export default (props) => {
 // function count(i) {
 //     for(i=0; i<props.length; i++) {
@@ -30,7 +31,8 @@ const lightBoxShow = () => {
             y.style.display = 'block';
         }
 }
-const {active}=props;
+    const {active}=props;
+    const [count, setCount] = useState(0);
     return (
         <>
             <Header/>
@@ -65,9 +67,9 @@ const {active}=props;
                     <br/>
                     <div id='add-to-cart'>
                         <div className='counter'>
-                            <img src={minus} id='counterMinus' />
-                            0
-                            <img src={plus} id='counterPlus' />
+                            <img src={minus} id='counterMinus' onClick={() => setCount(count - 1)}/>
+                            {count}
+                            <img src={plus} id='counterPlus' onClick={() => setCount(count + 1)}/>
                         </div>
                         <button>
                             <img src={cart}/>
