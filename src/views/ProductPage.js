@@ -6,8 +6,6 @@ import thumb1 from '../static/image-product-1-thumbnail.jpg';
 import thumb2 from '../static/image-product-2-thumbnail.jpg';
 import thumb3 from '../static/image-product-3-thumbnail.jpg';
 import thumb4 from '../static/image-product-4-thumbnail.jpg';
-import LeftArrow from '../static/icon-previous.svg';
-import RightArrow from '../static/icon-next.svg';
 import minus from '../static/icon-minus.svg';
 import plus from '../static/icon-plus.svg';
 import cart from '../static/icon-cart.svg';

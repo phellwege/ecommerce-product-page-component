@@ -5,13 +5,17 @@ import thumb1 from '../static/image-product-1-thumbnail.jpg';
 import thumb2 from '../static/image-product-2-thumbnail.jpg';
 import thumb3 from '../static/image-product-3-thumbnail.jpg';
 import thumb4 from '../static/image-product-4-thumbnail.jpg';
+import LeftArrow from '../static/icon-previous.svg';
+import RightArrow from '../static/icon-next.svg';
 export default (props) => {
         
     return (
         <div className="lightBoxWrap">
             <div className="lightBoxBox">
                 <div id='BigImg'>
+                    <img src={LeftArrow} className='arrow'/>
                     <img src={product}/>
+                    <img src={RightArrow} className='arrow'/>
                 </div>
                 <div id='ImgSelector'>
                     <img src={thumb1} id='img1'/>

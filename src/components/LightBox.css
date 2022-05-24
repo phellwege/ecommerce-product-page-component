@@ -15,3 +15,18 @@
     margin-left: 25%;
     margin-top: 2.5%;
 }
+#BigImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#BigImg .arrow {
+    height: 2.5%;
+    width: 2.5%;
+    background-color: white;
+    border-radius: 50%;
+    padding: 1.5em;
+    margin: -4%;
+    z-index: 9999;
+}
