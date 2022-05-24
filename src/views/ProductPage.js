@@ -21,6 +21,15 @@ export default (props) => {
 //         }
 //     }
 // }
+const lightBoxShow = () => {
+        const y = document.getElementsByClassName('lightBoxWrap')[0];
+        if(y.style.display == 'block') {
+            y.style.display = 'none';
+        }
+        else {
+            y.style.display = 'block';
+        }
+}
 const {active}=props;
     return (
         <>
@@ -29,7 +38,7 @@ const {active}=props;
             <div className='ProductWrap'>
                 <div className="LeftDiv">
                     <div id='BigImg'>
-                        <img src={product}/>
+                        <img src={product} onClick={lightBoxShow}/>
                     </div>
                     <div id='ImgSelector'>
                         <img src={thumb1} id='img1' className={"links"+(active===0?" active":"")}/>

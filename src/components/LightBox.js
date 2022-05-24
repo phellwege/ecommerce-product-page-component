@@ -7,11 +7,23 @@ import thumb3 from '../static/image-product-3-thumbnail.jpg';
 import thumb4 from '../static/image-product-4-thumbnail.jpg';
 import LeftArrow from '../static/icon-previous.svg';
 import RightArrow from '../static/icon-next.svg';
+import close from '../static/icon-close.svg';
 export default (props) => {
         
+    const lightBoxShow = () => {
+        const y = document.getElementsByClassName('lightBoxWrap')[0];
+        if(y.style.display == 'block') {
+            y.style.display = 'none';
+        }
+        else {
+            y.style.display = 'block';
+        }
+}
+
     return (
         <div className="lightBoxWrap">
             <div className="lightBoxBox">
+                <img src={close} id='closeIcon' onClick={lightBoxShow}/>
                 <div id='BigImg'>
                     <img src={LeftArrow} className='arrow'/>
                     <img src={product}/>
