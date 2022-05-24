@@ -29,4 +29,8 @@
     padding: 1.5em;
     margin: -4%;
     z-index: 9999;
+    border: 2.5px solid transparent;
+}
+#BigImg .arrow:hover {
+    border: 2.5px solid hsl(26, 100%, 55%);
 }
