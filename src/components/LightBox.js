@@ -8,15 +8,17 @@ import thumb4 from '../static/image-product-4-thumbnail.jpg';
 export default (props) => {
         
     return (
-        <div>
-            <div id='BigImg'>
-                <img src={product}/>
-            </div>
-            <div id='ImgSelector'>
-                <img src={thumb1} id='img1'/>
-                <img src={thumb2} id='img2'/>
-                <img src={thumb3} id='img3'/>
-                <img src={thumb4} id='img4'/>
+        <div className="lightBoxWrap">
+            <div className="lightBoxBox">
+                <div id='BigImg'>
+                    <img src={product}/>
+                </div>
+                <div id='ImgSelector'>
+                    <img src={thumb1} id='img1'/>
+                    <img src={thumb2} id='img2'/>
+                    <img src={thumb3} id='img3'/>
+                    <img src={thumb4} id='img4'/>
+                </div>
             </div>
         </div>
     )

@@ -10,17 +10,24 @@ import LeftArrow from '../static/icon-previous.svg';
 import RightArrow from '../static/icon-next.svg';
 import minus from '../static/icon-minus.svg';
 import plus from '../static/icon-plus.svg';
-import cart from '../static/icon-cart.svg'
-
+import cart from '../static/icon-cart.svg';
+import LightBox from '../components/LightBox';
 export default (props) => {
-function count(i) {
-    i=0;
-    return i
-}
+// function count(i) {
+//     for(i=0; i<props.length; i++) {
+//         if(){
+//             i++;
+//         }
+//         if(){
+//             i--;
+//         }
+//     }
+// }
 const {active}=props;
     return (
         <>
             <Header/>
+            <LightBox/>
             <div className='ProductWrap'>
                 <div className="LeftDiv">
                     <div id='BigImg'>
