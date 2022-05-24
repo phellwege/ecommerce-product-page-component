@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-color: rgba(0, 0, 0, 0.75);
     width: 100vw;
-    height: 100vh;
+    height: 110%;
     display: none;
 }
 .lightBoxBox {
@@ -41,4 +41,5 @@
 }
 #BigImg .arrow:hover {
     border: 2.5px solid hsl(26, 100%, 55%);
+    fill:hsl(26, 100%, 55%);
 }
