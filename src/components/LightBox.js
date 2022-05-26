@@ -20,6 +20,7 @@ export default (props) => {
         }
 }
 const {active}=props;
+
     return (
         <div className="lightBoxWrap">
             <div className="lightBoxBox">

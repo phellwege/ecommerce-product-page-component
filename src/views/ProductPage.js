@@ -33,6 +33,7 @@ const lightBoxShow = () => {
 }
     const {active}=props;
     const [count, setCount] = useState(0);
+
     return (
         <>
             <Header/>
@@ -43,10 +44,10 @@ const lightBoxShow = () => {
                         <img src={product} onClick={lightBoxShow}/>
                     </div>
                     <div id='ImgSelector'>
-                        <img src={thumb1} id='img1' className={"links"+(active===0?" active":"")}/>
-                        <img src={thumb2} id='img2' className={"links"+(active===1?" active":"")}/>
-                        <img src={thumb3} id='img3' className={"links"+(active===2?" active":"")}/>
-                        <img src={thumb4} id='img4' className={"links"+(active===3?" active":"")}/>
+                        <img src={thumb1} id='img1' className={"links"+(active===0?" active":"")} />
+                        <img src={thumb2} id='img2' className={"links"+(active===1?" active":"")} />
+                        <img src={thumb3} id='img3' className={"links"+(active===2?" active":"")} />
+                        <img src={thumb4} id='img4' className={"links"+(active===3?" active":"")} />
                     </div>
                 </div>
                 <div className="RightDiv">

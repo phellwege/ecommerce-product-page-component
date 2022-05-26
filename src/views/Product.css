@@ -127,3 +127,6 @@ h5 {
 h1 {
     font-weight: bold;
 }
+.active {
+    background-color: hsl(25, 100%, 94%, .5);
+}
