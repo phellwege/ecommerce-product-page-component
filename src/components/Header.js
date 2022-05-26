@@ -20,10 +20,10 @@ export default (props) => {
             </div>
             <div id='header-right'>
                 <div>
-                    <a href='/'><img src={cart} alt='Logo'/></a>
+                    <a href='/'><img src={cart} alt='Cart Logo'/></a>
                 </div>
                 <div>
-                    <a href='/'><img src={avatar} id='avatar' alt='Logo'/></a>
+                    <a href='/'><img src={avatar} id='avatar' alt='Avatar'/></a>
                 </div>
             </div>
         </div>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Header from '../components/Header'
 import './Product.css'
 import product from '../static/image-product-1.jpg'
@@ -24,7 +24,7 @@ export default (props) => {
 // }
 const lightBoxShow = () => {
         const y = document.getElementsByClassName('lightBoxWrap')[0];
-        if(y.style.display == 'block') {
+        if(y.style.display === 'block') {
             y.style.display = 'none';
         }
         else {
@@ -41,13 +41,13 @@ const lightBoxShow = () => {
             <div className='ProductWrap'>
                 <div className="LeftDiv">
                     <div id='BigImg'>
-                        <img src={product} onClick={lightBoxShow}/>
+                        <img src={product} onClick={lightBoxShow} alt='product img'/>
                     </div>
                     <div id='ImgSelector'>
-                        <img src={thumb1} id='img1' className={"links"+(active===0?" active":"")} />
-                        <img src={thumb2} id='img2' className={"links"+(active===1?" active":"")} />
-                        <img src={thumb3} id='img3' className={"links"+(active===2?" active":"")} />
-                        <img src={thumb4} id='img4' className={"links"+(active===3?" active":"")} />
+                        <img src={thumb1} id='img1' className={"links"+(active===0?" active":"")} alt='thumbnail' />
+                        <img src={thumb2} id='img2' className={"links"+(active===1?" active":"")} alt='thumbnail' />
+                        <img src={thumb3} id='img3' className={"links"+(active===2?" active":"")} alt='thumbnail' />
+                        <img src={thumb4} id='img4' className={"links"+(active===3?" active":"")} alt='thumbnail' />
                     </div>
                 </div>
                 <div className="RightDiv">
@@ -68,12 +68,12 @@ const lightBoxShow = () => {
                     <br/>
                     <div id='add-to-cart'>
                         <div className='counter'>
-                            <img src={minus} id='counterMinus' onClick={() => setCount(count - 1)}/>
+                            <img src={minus} id='counterMinus' onClick={() => setCount(count - 1)} alt=''/>
                             {count}
-                            <img src={plus} id='counterPlus' onClick={() => setCount(count + 1)}/>
+                            <img src={plus} id='counterPlus' onClick={() => setCount(count + 1)} alt=''/>
                         </div>
                         <button>
-                            <img src={cart}/>
+                            <img src={cart} alt='cart logo'/>
                             Add to cart
                         </button>
                     </div>
