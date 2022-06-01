@@ -27,8 +27,8 @@ export default (props) => {
             setCount(count - 1)
         return count
     }};
-    function addToCart(){
-        var numInCart = props;
+    function addToCart(props){
+        var numInCart = 0;
         if(count>0){
         numInCart += count;
         console.log(numInCart)
