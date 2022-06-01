@@ -27,7 +27,12 @@ export default (props) => {
             setCount(count - 1)
         return count
     }};
-    
+    function addToCart(props){
+        var numInCart = 0;
+        if(count>0){
+        numInCart = count
+        return numInCart
+    }};
     return (
         <>
             <Header/>
@@ -66,7 +71,7 @@ export default (props) => {
                             {count}
                             <img src={plus} id='counterPlus' onClick={() => setCount(count + 1)} alt=''/>
                         </div>
-                        <button>
+                        <button onClick={() => addToCart()}>
                             <img src={cart} alt='cart logo'/>
                             Add to cart
                         </button>
