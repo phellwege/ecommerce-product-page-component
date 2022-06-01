@@ -12,22 +12,22 @@ import cart from '../static/icon-cart.svg';
 import LightBox from '../components/LightBox';
 
 export default (props) => {
-const lightBoxShow = () => {
+    const {active}=props;
+    const [count, setCount] = useState(0);
+    const lightBoxShow = () => {
         const y = document.getElementsByClassName('lightBoxWrap')[0];
         if(y.style.display === 'block') {
             y.style.display = 'none';
         }
         else {
             y.style.display = 'block';
-        }
-}
-    const {active}=props;
-    const [count, setCount] = useState(0);
+    }};
     function setMinusCount(){
-    if(count>0){
+        if(count>0){
             setCount(count - 1)
-        return count}
-        }
+        return count
+    }};
+    
     return (
         <>
             <Header/>
