@@ -27,10 +27,12 @@ export default (props) => {
             setCount(count - 1)
         return count
     }};
-    function addToCart(props){
-        var numInCart = 0;
+    function addToCart(){
+        var numInCart = props;
         if(count>0){
-        numInCart = count
+        numInCart += count;
+        console.log(numInCart)
+        setCount(0)
         return numInCart
     }};
     return (
