@@ -12,16 +12,6 @@ import cart from '../static/icon-cart.svg';
 import LightBox from '../components/LightBox';
 
 export default (props) => {
-// function count(i) {
-//     for(i=0; i<props.length; i++) {
-//         if(){
-//             i++;
-//         }
-//         if(){
-//             i--;
-//         }
-//     }
-// }
 const lightBoxShow = () => {
         const y = document.getElementsByClassName('lightBoxWrap')[0];
         if(y.style.display === 'block') {
@@ -33,7 +23,11 @@ const lightBoxShow = () => {
 }
     const {active}=props;
     const [count, setCount] = useState(0);
-
+    function setMinusCount(){
+    if(count>0){
+            setCount(count - 1)
+        return count}
+        }
     return (
         <>
             <Header/>
@@ -68,7 +62,7 @@ const lightBoxShow = () => {
                     <br/>
                     <div id='add-to-cart'>
                         <div className='counter'>
-                            <img src={minus} id='counterMinus' onClick={() => setCount(count - 1)} alt=''/>
+                            <img src={minus} id='counterMinus' onClick={() => setMinusCount()} alt=''/>
                             {count}
                             <img src={plus} id='counterPlus' onClick={() => setCount(count + 1)} alt=''/>
                         </div>
