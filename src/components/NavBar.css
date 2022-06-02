@@ -44,3 +44,12 @@
 .sticky {
     position: absolute;
 }
+.ItemsInCart {
+    z-index: 999;
+    position: fixed;
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+    border-radius: .5em;
+    padding-left: .35%;
+    padding-right: .35%;
+}

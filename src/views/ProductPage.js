@@ -12,7 +12,7 @@ import cart from '../static/icon-cart.svg';
 import LightBox from '../components/LightBox';
 
 export default (props) => {
-    const [numInCart, setNumInCart] = useState('')
+    let [numInCart, setNumInCart] = useState(0);
     const {active}=props;
     const [count, setCount] = useState(0);
     const lightBoxShow = () => {
@@ -29,11 +29,11 @@ export default (props) => {
         return count
     }};
     function addToCart(){
-        var numInCart = 0;
         if(count>0) {
+            // var numInCart = 0;
+            console.log(count, numInCart)
             numInCart += count;
             setCount(0);
-        console.log(numInCart)
     }
     setNumInCart(numInCart)
 };
@@ -71,7 +71,7 @@ export default (props) => {
                     <br/>
                     <div id='add-to-cart'>
                         <div className='counter'>
-                            <img src={minus} id='counterMinus' onClick={() => setMinusCount()} alt=''/>
+                            <img src={minus} id='counterMinus' onClick={() => setMinusCount()} alt='' class='svg'/>
                             {count}
                             <img src={plus} id='counterPlus' onClick={() => setCount((count + 1))} alt=''/>
                         </div>

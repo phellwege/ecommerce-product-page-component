@@ -21,7 +21,7 @@ export default (props) => {
                 <div>
                     <a href='/'>
                         <img src={cart} alt='Cart Logo'/>
-                        {props.numInCart}
+                        <span className="ItemsInCart">{props.numInCart == 0 ? '' : props.numInCart}</span>
                     </a>
                 </div>
                 <div>

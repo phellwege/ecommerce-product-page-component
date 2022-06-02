@@ -42,4 +42,5 @@
 #BigImg .arrow:hover {
     border: 2.5px solid hsl(26, 100%, 55%);
     fill:hsl(26, 100%, 55%);
+    filter: hue-rotate(-13) saturate(1) brightness(.55) ;
 }
