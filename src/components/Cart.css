@@ -17,8 +17,9 @@
     padding: 2.5%;
 }
 .cartThumb {
-    padding: 2.5%;
-    width: 25%;
+    margin: 2.5%;
+    width: 20%;
+    border-radius: .5em;
 }
 .checkout {
     background-color: hsl(26, 100%, 55%);
@@ -37,5 +38,12 @@
 }
 #boldMe {
     font-weight: bold;
-    
+}
+.cartBoxText {
+    align-self: center;
+}
+.cartTrash {
+    width: 5%;
+    height: 5%;
+    align-self: center;
 }

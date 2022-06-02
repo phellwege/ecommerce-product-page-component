@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Cart.css';
 import thumb1 from '../static/image-product-1-thumbnail.jpg';
-import close from '../static/icon-close.svg';
+import trashcan from '../static/icon-delete.svg';
 export default (props) => {
         
     const cartBoxShow = () => {
@@ -19,7 +19,7 @@ export default (props) => {
         <div className="cartBoxWrap">
             <div className="cartBoxBox">
                 {props.numInCart == 0 ? '' : <img src={thumb1} alt='product in cart' className='cartThumb'/>} 
-                <div>
+                <div className="cartBoxText">
                     {props.numInCart == 0 ? '' : 'Fall Limited Edition Sneakers'} 
                     <br/>
                     {props.numInCart == 0 ? '' : props.numInCart} 
@@ -29,6 +29,7 @@ export default (props) => {
                         {props.numInCart == 0 ? '' : props.numInCart * 125.00}
                     </span>
                 </div>
+                <img src={trashcan} className="cartTrash"/>
             </div>
             <button className="checkout" onClick={cartBoxShow}>
                 Checkout
