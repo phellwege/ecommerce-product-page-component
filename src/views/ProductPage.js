@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Header from '../components/Header'
+import Header from '../components/Header';
 import './Product.css'
 import product from '../static/image-product-1.jpg'
 import thumb1 from '../static/image-product-1-thumbnail.jpg';
@@ -12,6 +12,7 @@ import cart from '../static/icon-cart.svg';
 import LightBox from '../components/LightBox';
 
 export default (props) => {
+    const [numInCart, setNumInCart] = useState('')
     const {active}=props;
     const [count, setCount] = useState(0);
     const lightBoxShow = () => {
@@ -27,17 +28,18 @@ export default (props) => {
             setCount(count - 1)
         return count
     }};
-    function addToCart(props){
+    function addToCart(){
         var numInCart = 0;
-        if(count>0){
-        numInCart += count;
+        if(count>0) {
+            numInCart += count;
+            setCount(0);
         console.log(numInCart)
-        setCount(0)
-        return numInCart
-    }};
+    }
+    setNumInCart(numInCart)
+};
     return (
         <>
-            <Header/>
+            <Header count={count} numInCart={numInCart}/>
             <LightBox/>
             <div className='ProductWrap'>
                 <div className="LeftDiv">
@@ -71,7 +73,7 @@ export default (props) => {
                         <div className='counter'>
                             <img src={minus} id='counterMinus' onClick={() => setMinusCount()} alt=''/>
                             {count}
-                            <img src={plus} id='counterPlus' onClick={() => setCount(count + 1)} alt=''/>
+                            <img src={plus} id='counterPlus' onClick={() => setCount((count + 1))} alt=''/>
                         </div>
                         <button onClick={() => addToCart()}>
                             <img src={cart} alt='cart logo'/>
