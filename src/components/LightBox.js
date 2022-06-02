@@ -11,12 +11,15 @@ import close from '../static/icon-close.svg';
 export default (props) => {
         
     const lightBoxShow = () => {
-        const y = document.getElementsByClassName('lightBoxWrap')[0];
-        if(y.style.display == 'block') {
+        const x = document.getElementsByClassName('lightBoxWrap')[0];
+        const y = document.getElementsByClassName('cartBoxWrap')[0];
+        if(x.style.display == 'block') {
+            x.style.display = 'none';
             y.style.display = 'none';
         }
         else {
-            y.style.display = 'block';
+            x.style.display = 'block';
+            y.style.display = 'none';
         }
 }
 const {active}=props;
