@@ -13,18 +13,29 @@
 }
 .cartBoxBox {
     display:flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
-    margin-left: 25%;
-    margin-top: 2.5%;
+    justify-content: space-around;
+    padding: 2.5%;
 }
-#closeIcon {
-    width: 5%;
-    margin-left: 75%;
-    padding: 1%;
+.cartThumb {
+    padding: 2.5%;
+    width: 25%;
 }
-#closeIcon:hover {
+.checkout {
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+    width: 75%;
+    border-radius: .5em;
+    border: none;
+    margin: 2.5%;
+    margin-left: 3%;
+    border: 2.5px solid transparent;
+}
+.checkout:hover {
+    border:2.5px solid hsl(219, 9%, 45%);
+    box-shadow: 0px 10px 10px hsl(25, 100%, 94%);
     cursor: pointer;
 }
-
+#boldMe {
+    font-weight: bold;
+    
+}

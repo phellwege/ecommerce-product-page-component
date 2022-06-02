@@ -35,8 +35,6 @@ export default (props) => {
     }};
     function addToCart(){
         if(count>0) {
-            // var numInCart = 0;
-            console.log(count, numInCart)
             numInCart += count;
             setCount(0);
     }
@@ -46,7 +44,7 @@ export default (props) => {
         <>
             <Header count={count} numInCart={numInCart}/>
             <LightBox/>
-            <Cart/>
+            <Cart count={count} numInCart={numInCart}/>
             <div className='ProductWrap'>
                 <div className="LeftDiv">
                     <div id='BigImg'>

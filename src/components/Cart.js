@@ -13,13 +13,26 @@ export default (props) => {
             y.style.display = 'block';
         }
 }
-const {active}=props;
+
 
     return (
         <div className="cartBoxWrap">
             <div className="cartBoxBox">
-                <img src={close} id='closeIcon' onClick={cartBoxShow} alt='close icon'/>
+                {props.numInCart == 0 ? '' : <img src={thumb1} alt='product in cart' className='cartThumb'/>} 
+                <div>
+                    {props.numInCart == 0 ? '' : 'Fall Limited Edition Sneakers'} 
+                    <br/>
+                    {props.numInCart == 0 ? '' : props.numInCart} 
+                    {props.numInCart == 0 ? '' : ' X '} 
+                    {props.numInCart == 0 ? '' : ' 125 '} 
+                    <span id='boldMe'>
+                        {props.numInCart == 0 ? '' : props.numInCart * 125.00}
+                    </span>
+                </div>
             </div>
+            <button className="checkout" onClick={cartBoxShow}>
+                Checkout
+            </button>
         </div>
     )
 }

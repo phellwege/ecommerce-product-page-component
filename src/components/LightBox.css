@@ -6,6 +6,7 @@
     width: 100vw;
     height: 110%;
     display: none;
+    z-index: 1;
 }
 .lightBoxBox {
     display:flex;
