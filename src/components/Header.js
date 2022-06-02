@@ -5,6 +5,17 @@ import avatar from '../static/image-avatar.png';
 import './NavBar.css';
 
 export default (props) => {
+
+    const cartBoxShow = () => {
+        const y = document.getElementsByClassName('cartBoxWrap')[0];
+        if(y.style.display == 'block') {
+            y.style.display = 'none';
+        }
+        else {
+            y.style.display = 'block';
+        }
+}
+
     return (
         <div id="navBarWrap" className="sticky">
             <div id='navBarLinks'>
@@ -19,7 +30,7 @@ export default (props) => {
             </div>
             <div id='header-right'>
                 <div>
-                    <a href='/'>
+                    <a href='#' onClick={cartBoxShow}>
                         <img src={cart} alt='Cart Logo'/>
                         <span className="ItemsInCart">{props.numInCart == 0 ? '' : props.numInCart}</span>
                     </a>

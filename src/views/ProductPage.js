@@ -10,6 +10,7 @@ import minus from '../static/icon-minus.svg';
 import plus from '../static/icon-plus.svg';
 import cart from '../static/icon-cart.svg';
 import LightBox from '../components/LightBox';
+import Cart from '../components/Cart';
 
 export default (props) => {
     let [numInCart, setNumInCart] = useState(0);
@@ -41,6 +42,7 @@ export default (props) => {
         <>
             <Header count={count} numInCart={numInCart}/>
             <LightBox/>
+            <Cart/>
             <div className='ProductWrap'>
                 <div className="LeftDiv">
                     <div id='BigImg'>
@@ -71,7 +73,7 @@ export default (props) => {
                     <br/>
                     <div id='add-to-cart'>
                         <div className='counter'>
-                            <img src={minus} id='counterMinus' onClick={() => setMinusCount()} alt='' class='svg'/>
+                            <img src={minus} id='counterMinus' onClick={() => setMinusCount()} alt=''/>
                             {count}
                             <img src={plus} id='counterPlus' onClick={() => setCount((count + 1))} alt=''/>
                         </div>

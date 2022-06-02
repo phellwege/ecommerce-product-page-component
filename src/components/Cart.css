@@ -1,0 +1,46 @@
+.cartBoxWrap {
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100vw;
+    height: 110%;
+    display: none;
+}
+.lightBoxBox {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 2.5%;
+}
+#closeIcon {
+    width: 5%;
+    margin-left: 75%;
+    padding: 1%;
+}
+#closeIcon:hover {
+    cursor: pointer;
+}
+#BigImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#BigImg .arrow {
+    height: 2.5%;
+    width: 2.5%;
+    background-color: white;
+    border-radius: 50%;
+    padding: 1.5em;
+    margin: -4%;
+    z-index: 9999;
+    border: 2.5px solid transparent;
+}
+#BigImg .arrow:hover {
+    border: 2.5px solid hsl(26, 100%, 55%);
+    fill:hsl(26, 100%, 55%);
+    filter: hue-rotate(-13) saturate(1) brightness(.55) ;
+}

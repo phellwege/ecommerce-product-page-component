@@ -16,8 +16,9 @@
     border-bottom: 2.5px solid transparent;
 }
 #navBarLinks ul li a:hover {
-    text-decoration: underline;
-    color: hsl(26, 100%, 55%);
+    /* text-decoration: underline; */
+    color: black;
+    font-weight: bold;
 }
 #navBarLinks{
     width:50%;
