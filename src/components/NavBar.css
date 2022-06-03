@@ -1,7 +1,7 @@
 #navBarWrap {
     display: flex;
     width: 80%;
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 1px solid rgb(173, 160, 160);
     margin-left: 10%;
     overflow: hidden;
 }
@@ -18,7 +18,7 @@
 #navBarLinks ul li a:hover {
     /* text-decoration: underline; */
     color: black;
-    font-weight: bold;
+    font-weight: 600;
 }
 #navBarLinks{
     width:50%;

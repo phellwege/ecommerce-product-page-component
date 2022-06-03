@@ -29,11 +29,15 @@ export default (props) => {
                         {props.numInCart == 0 ? '' : props.numInCart * 125.00}
                     </span>
                 </div>
-                <img src={trashcan} className="cartTrash"/>
+                {props.numInCart == 0 ? '' : <img src={trashcan} className="cartTrash"/>} 
+                
             </div>
-            <button className="checkout" onClick={cartBoxShow}>
-                Checkout
-            </button>
+            {props.numInCart == 0 ? '' : 
+                <button className="checkout" onClick={cartBoxShow}>
+                    Checkout
+                </button>
+            } 
+            
         </div>
     )
 }

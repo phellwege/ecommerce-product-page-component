@@ -21,11 +21,11 @@ export default (props) => {
             <div id='navBarLinks'>
             <ul >
                 <li><a href='/'><img src={logo} alt='Logo'/></a></li>
-                <li><a href='/' id='navText'> Collections</a></li>
-                <li><a href='/' id='navText'> Men</a></li>
-                <li><a href='/' id='navText'> Women</a></li>
-                <li><a href='/' id='navText'> About</a></li>
-                <li><a href='/' id='navText'> Contact</a></li>
+                <li><a href='/' id='navText'>Collections</a></li>
+                <li><a href='/' id='navText'>Men</a></li>
+                <li><a href='/' id='navText'>Women</a></li>
+                <li><a href='/' id='navText'>About</a></li>
+                <li><a href='/' id='navText'>Contact</a></li>
             </ul>
             </div>
             <div id='header-right'>
