@@ -19,7 +19,7 @@ export default (props) => {
             <div className="cartBoxBox">
                 {props.numInCart == 0 ? '' : <img src={thumb1} alt='product in cart' className='cartThumb'/>} 
                 <div className="cartBoxText">
-                    {props.numInCart == 0 ? 'Your Cart Is Empty' : 'Fall Limited Edition Sneakers'} 
+                    {props.numInCart == 0 ? 'Your Shopping Cart Is Empty' : 'Fall Limited Edition Sneakers'} 
                     <br/>
                     {props.numInCart == 0 ? '' : props.numInCart} 
                     {props.numInCart == 0 ? '' : ' X '} 
@@ -30,7 +30,7 @@ export default (props) => {
                     </span>
                 </div>
                 {props.numInCart == 0 ? '' : 
-                    <img src={trashcan} className="cartTrash" />
+                    <img src={trashcan} className="cartTrash" onClick={props.removeFromCart}/>
                 } 
                 
             </div>

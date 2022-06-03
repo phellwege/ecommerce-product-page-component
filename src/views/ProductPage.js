@@ -13,8 +13,8 @@ import LightBox from '../components/LightBox';
 import Cart from '../components/Cart';
 
 export default (props) => {
-    let [numInCart, setNumInCart] = useState(0);
     const {active}=props;
+    let [numInCart, setNumInCart] = useState(0);
     const [count, setCount] = useState(0);
     const lightBoxShow = () => {
         const x = document.getElementsByClassName('lightBoxWrap')[0];
@@ -28,23 +28,29 @@ export default (props) => {
             y.style.display = 'none';
         }
 }
-    function setMinusCount(){
+    function setMinusCount() {
         if(count>0){
             setCount(count - 1)
         return count
     }};
-    function addToCart(){
+    function addToCart() {
         if(count>0) {
             numInCart += count;
             setCount(0);
-    }
+        }
     setNumInCart(numInCart)
-};
+    };
+    function removeFromCart() {
+        if(numInCart>0) {
+            numInCart = 0;
+        }
+        setNumInCart(numInCart)
+    };
     return (
         <>
-            <Header count={count} numInCart={numInCart} setNumInCart={setNumInCart}/>
+            <Header count={count} numInCart={numInCart} setNumInCart={setNumInCart} removeFromCart={removeFromCart}/>
             <LightBox/>
-            <Cart count={count} numInCart={numInCart}/>
+            <Cart count={count} numInCart={numInCart} setNumInCart={setNumInCart} removeFromCart={removeFromCart}/>
             <div className='ProductWrap'>
                 <div className="LeftDiv">
                     <div id='BigImg'>
