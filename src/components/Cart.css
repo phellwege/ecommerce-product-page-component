@@ -48,3 +48,6 @@
     height: 5%;
     align-self: center;
 }
+.cartTrash:hover {
+    cursor: pointer;
+}

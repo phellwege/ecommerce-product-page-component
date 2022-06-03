@@ -12,8 +12,7 @@ export default (props) => {
         else {
             y.style.display = 'block';
         }
-}
-
+    }
 
     return (
         <div className="cartBoxWrap">
@@ -26,11 +25,12 @@ export default (props) => {
                     {props.numInCart == 0 ? '' : ' X '} 
                     {props.numInCart == 0 ? '' : ' 125 '} 
                     <span id='boldMe'>
+                        {props.numInCart == 0 ? '' : '$'}
                         {props.numInCart == 0 ? '' : props.numInCart * 125.00}
                     </span>
                 </div>
                 {props.numInCart == 0 ? '' : 
-                    <img src={trashcan} className="cartTrash"/>
+                    <img src={trashcan} className="cartTrash" />
                 } 
                 
             </div>

@@ -42,7 +42,7 @@ export default (props) => {
 };
     return (
         <>
-            <Header count={count} numInCart={numInCart}/>
+            <Header count={count} numInCart={numInCart} setNumInCart={setNumInCart}/>
             <LightBox/>
             <Cart count={count} numInCart={numInCart}/>
             <div className='ProductWrap'>
