@@ -33,8 +33,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-![](../ecommerce-product-page/src/static/CaptureHome.PNG)
+[](../ecommerce-product-page/src/static/CaptureHome.PNG)
 
 ### Links
 
