@@ -4,7 +4,6 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
 
 ## Table of contents
 
-- [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
@@ -14,11 +13,7 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
-## Overview
 
 ### The challenge
 
@@ -51,33 +46,40 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I improved my use of props and state throughout the project, and really feel like I got a grasp of using ternaries appropriately. 
 
 To see how you can add code snippets, see below:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
+Some Basic JS Code I was proud of was the use of ternary statements to determine what to show in the cart, or what not to show.
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+<div className="cartBoxBox">
+                {props.numInCart == 0 ? '' : <img src={thumb1} alt='product in cart' className='cartThumb'/>} 
+                <div className="cartBoxText">
+                    {props.numInCart == 0 ? 'Your Shopping Cart Is Empty' : 'Fall Limited Edition Sneakers'} 
+                    <br/>
+                    {props.numInCart == 0 ? '' : props.numInCart} 
+                    {props.numInCart == 0 ? '' : ' X '} 
+                    {props.numInCart == 0 ? '' : ' 125 '} 
+                    <span id='boldMe'>
+                        {props.numInCart == 0 ? '' : '$'}
+                        {props.numInCart == 0 ? '' : props.numInCart * 125.00}
+                    </span>
+                </div>
+                {props.numInCart == 0 ? '' : 
+                    <img src={trashcan} className="cartTrash" onClick={props.removeFromCart}/>
+                } 
+                
+            </div>
+            {props.numInCart == 0 ? '' : 
+                <button className="checkout" onClick={cartBoxShow}>
+                    Checkout
+                </button>
+            }
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+A few area I would still like some more work on are understanding asynchronous operations within ReactJS. There were a few tasks that took me longer than they should have because of my limited knowledge of this.
 
 ### Useful resources
 
@@ -88,14 +90,5 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [Peter Hellwege](https://peters-portfolio.net)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
