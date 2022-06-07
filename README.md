@@ -11,7 +11,6 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 
@@ -48,8 +47,6 @@ Users should be able to:
 
 I improved my use of props and state throughout the project, and really feel like I got a grasp of using ternaries appropriately. 
 
-To see how you can add code snippets, see below:
-
 Some Basic JS Code I was proud of was the use of ternary statements to determine what to show in the cart, or what not to show.
 ```js
 <div className="cartBoxBox">
@@ -79,14 +76,7 @@ Some Basic JS Code I was proud of was the use of ternary statements to determine
 
 ### Continued development
 
-A few area I would still like some more work on are understanding asynchronous operations within ReactJS. There were a few tasks that took me longer than they should have because of my limited knowledge of this.
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+A few areas I would still like some more work on are understanding asynchronous operations within ReactJS. There were a few tasks that took me longer than they should have because of my limited knowledge of this.
 
 ## Author
 
