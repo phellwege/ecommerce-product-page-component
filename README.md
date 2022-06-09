@@ -80,5 +80,5 @@ A few areas I would still like some more work on are understanding asynchronous 
 
 ## Author
 
-- Website - [Peter Hellwege](https://peters-portfolio.net)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Website - [Peter Hellwege](http://peters-portfolio.net)
+- Frontend Mentor - [@phellwege](https://www.frontendmentor.io/profile/phellwege)
