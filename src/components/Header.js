@@ -22,12 +22,12 @@ export default (props) => {
         <div id="navBarWrap" className="sticky">
             <div id='navBarLinks'>
             <ul >
-                <li><a href='/#' onClick={alertMsg}><img src={logo} alt='Logo'/></a></li>
-                <li><a href='/#' id='navText' onClick={alertMsg}>Collections</a></li>
-                <li><a href='/#' id='navText' onClick={alertMsg}>Men</a></li>
-                <li><a href='/#' id='navText' onClick={alertMsg}>Women</a></li>
-                <li><a href='/#' id='navText' onClick={alertMsg}>About</a></li>
-                <li><a href='/#' id='navText' onClick={alertMsg}>Contact</a></li>
+                <li><a href='' onClick={alertMsg}><img src={logo} alt='Logo'/></a></li>
+                <li><a href='' id='navText' onClick={alertMsg}>Collections</a></li>
+                <li><a href='' id='navText' onClick={alertMsg}>Men</a></li>
+                <li><a href='' id='navText' onClick={alertMsg}>Women</a></li>
+                <li><a href='' id='navText' onClick={alertMsg}>About</a></li>
+                <li><a href='' id='navText' onClick={alertMsg}>Contact</a></li>
             </ul>
             </div>
             <div id='header-right'>
@@ -38,7 +38,7 @@ export default (props) => {
                     </a>
                 </div>
                 <div>
-                    <a href='/#' onClick={alertMsg}><img src={avatar} id='avatar' alt='Avatar'/></a>
+                    <a href='' onClick={alertMsg}><img src={avatar} id='avatar' alt='Avatar'/></a>
                 </div>
             </div>
         </div>
