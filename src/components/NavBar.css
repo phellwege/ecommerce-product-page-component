@@ -10,15 +10,17 @@
     justify-content: space-between;
     list-style: none;
 }
-#navBarLinks ul li a {
+#navBarLinks ul li  {
     color: grey;
     text-decoration: none;
     border-bottom: 2.5px solid transparent;
+    border: 1px solid transparent;
 }
-#navBarLinks ul li a:hover {
+#navBarLinks ul li:hover {
     /* text-decoration: underline; */
     color: black;
     font-weight: 600;
+    cursor: pointer;
 }
 #navBarLinks{
     width:50%;

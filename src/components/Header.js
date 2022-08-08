@@ -22,12 +22,12 @@ export default (props) => {
         <div id="navBarWrap" className="sticky">
             <div id='navBarLinks'>
             <ul >
-                <li><a href='' onClick={alertMsg}><img src={logo} alt='Logo'/></a></li>
-                <li><a href='' id='navText' onClick={alertMsg}>Collections</a></li>
-                <li><a href='' id='navText' onClick={alertMsg}>Men</a></li>
-                <li><a href='' id='navText' onClick={alertMsg}>Women</a></li>
-                <li><a href='' id='navText' onClick={alertMsg}>About</a></li>
-                <li><a href='' id='navText' onClick={alertMsg}>Contact</a></li>
+                <li onClick={alertMsg} id='navText'><img src={logo} alt='Logo'/></li>
+                <li onClick={alertMsg}>Collections</li>
+                <li onClick={alertMsg} id='navText'>Men</li>
+                <li onClick={alertMsg} id='navText'>Women</li>
+                <li onClick={alertMsg} id='navText'>About</li>
+                <li onClick={alertMsg} id='navText'>Contact</li>
             </ul>
             </div>
             <div id='header-right'>
