@@ -43,6 +43,7 @@
 #avatar:hover {
     border: 2.5px solid hsl(26, 100%, 55%);
     border-radius: 50%;
+    cursor: pointer;
 }
 .sticky {
     position: absolute;

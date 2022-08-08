@@ -38,7 +38,7 @@ export default (props) => {
                     </a>
                 </div>
                 <div>
-                    <a href='' onClick={alertMsg}><img src={avatar} id='avatar' alt='Avatar'/></a>
+                    <img src={avatar} id='avatar' alt='Avatar' onClick={alertMsg}/>
                 </div>
             </div>
         </div>
